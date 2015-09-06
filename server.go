@@ -3,7 +3,7 @@ package main
 import (
 	// "fmt"
 
-	"github.com/dcao96/messengerKeyServer/routes"
+	"github.com/dcao96/Simple-Go-Key-Server/routes"
 
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"

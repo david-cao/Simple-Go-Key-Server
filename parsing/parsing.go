@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/dcao96/guess4/database"
+	"github.com/dcao96/Simple-Go-Key-Server/database"
 
 	"github.com/garyburd/redigo/redis"
 )

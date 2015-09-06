@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/dcao96/messengerKeyServer/parsing"
-	"github.com/dcao96/messengerKeyServer/types"
+	"github.com/dcao96/Simple-Go-Key-Server/parsing"
+	"github.com/dcao96/Simple-Go-Key-Server/types"
 )
 
 func GetHandler(w http.ResponseWriter, r *http.Request) {
@@ -34,6 +34,10 @@ func GetHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func RegisterHandler(w http.ResponseWriter, r *http.Request) {
+
+	r.ParseForm()
+	fmt.Println(r.Form())
+	fmt.Println(r.FormValue("data"))
 
 	data := r.Header.Get("data")
 	bytes := []byte(data)
